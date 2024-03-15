@@ -42,7 +42,7 @@ function App() {
           }
         });
     } else {
-      setMessage("Enter city name for its weather forecast");
+      setMessage("Enter city for its weather forecast.");
       setWeatherInfo(null);
     }
   }, [city]);
@@ -74,7 +74,7 @@ function App() {
         </form>
 
         {/* message */}
-        <p style={{ padding: "2%", fontSize: "larger", color: "#113946" }}>
+        <p style={{ padding: "2%", fontSize: "medium", color: "#113946" }}>
           {message}
         </p>
 
