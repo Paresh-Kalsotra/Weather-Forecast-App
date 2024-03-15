@@ -85,7 +85,7 @@ function App() {
           <img
             src="/default.png"
             alt="default img"
-            width="400"
+            width="300"
             style={{ opacity: "0.5" }}
           ></img>
         )}

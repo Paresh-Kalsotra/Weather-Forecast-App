@@ -23,7 +23,6 @@ const DisplayInfo = (props) => {
           padding: "20px",
           borderRadius: "10px",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-          minWidth: "400px",
           margin: "auto",
           color: "#59D5E0",
         }}
@@ -34,6 +33,7 @@ const DisplayInfo = (props) => {
           <div
             style={{
               display: "flex",
+              flexWrap: "wrap",
               justifyContent: "space-between",
               alignItems: "center",
               marginBottom: "5px",
@@ -49,9 +49,12 @@ const DisplayInfo = (props) => {
               />
             </p>
           </div>
+
           <div
             style={{
               display: "flex",
+              flexWrap: "wrap",
+              columnGap: "50px",
               justifyContent: "space-between",
               marginBottom: "10px",
               borderBottom: "1px solid #FAA300",
@@ -70,6 +73,8 @@ const DisplayInfo = (props) => {
           <div
             style={{
               display: "flex",
+              flexWrap: "wrap",
+              columnGap: "50px",
               justifyContent: "space-between",
               marginBottom: "10px",
               borderBottom: "1px solid #FAA300",
