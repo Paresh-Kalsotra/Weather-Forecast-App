@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import DisplayInfo from "./components/DisplayInfo";
 
@@ -14,7 +14,11 @@ function App() {
   //-------------handler for search-from submit
   const handleSearch = (event) => {
     event.preventDefault();
+    const fd = new FormData(event.target);
+    setCity(fd.get("cityInput"));
+  };
 
+  useEffect(() => {
     //fetching data from open Weather map
     if (city) {
       fetch(url + city)
@@ -41,7 +45,7 @@ function App() {
       setMessage("Enter city name for its weather forecast");
       setWeatherInfo(null);
     }
-  };
+  }, [city]);
 
   return (
     <>
@@ -63,7 +67,6 @@ function App() {
             id="cityInput"
             name="cityInput"
             placeholder="Enter City"
-            onChange={(e) => setCity(e.target.value)}
           ></input>
           <button type="submit" id="submit-btn">
             <FaSearch />
