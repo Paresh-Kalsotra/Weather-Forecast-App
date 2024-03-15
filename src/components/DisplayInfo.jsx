@@ -40,11 +40,14 @@ const DisplayInfo = (props) => {
             }}
           >
             <p>Weather: {info.weather[0].description}</p>
-            <img
-              src={iconUrl}
-              alt="Weather Icon"
-              style={{ width: "50px", height: "50px" }}
-            />
+
+            <p>
+              <img
+                src={iconUrl}
+                alt="Weather Icon"
+                style={{ width: "50px", height: "50px" }}
+              />
+            </p>
           </div>
           <div
             style={{
