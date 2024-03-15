@@ -23,7 +23,7 @@ const DisplayInfo = (props) => {
           padding: "20px",
           borderRadius: "10px",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-          maxWidth: "400px",
+          minWidth: "400px",
           margin: "auto",
           color: "#59D5E0",
         }}
@@ -55,11 +55,11 @@ const DisplayInfo = (props) => {
             }}
           >
             <p>
-              <IoIosTime style={{ color: "#F5DD61" }} /> Sunrise:{" "}
+              <IoIosTime style={{ color: "#FAA300" }} /> Sunrise:{" "}
               {formatTime(info.sys.sunrise)}
             </p>
             <p>
-              <IoIosTime style={{ color: "#F5DD61" }} /> Sunset:{" "}
+              <IoIosTime style={{ color: "#FAA300" }} /> Sunset:{" "}
               {formatTime(info.sys.sunset)}
             </p>
           </div>
@@ -74,11 +74,11 @@ const DisplayInfo = (props) => {
           >
             <div>
               <p>
-                <IoMdThermometer style={{ color: "#F5DD61" }} /> Temp:{" "}
+                <IoMdThermometer style={{ color: "#FAA300" }} /> Temp:{" "}
                 {info.main.temp} °C
               </p>
               <p>
-                <IoMdThermometer style={{ color: "#F5DD61" }} /> Feels Like:{" "}
+                <IoMdThermometer style={{ color: "#FAA300" }} /> Feels Like:{" "}
                 {info.main.feels_like} °C
               </p>
             </div>
@@ -101,11 +101,11 @@ const DisplayInfo = (props) => {
             </p>
 
             <p>
-              <IoIosCloud style={{ color: "#F5DD61" }} /> Pressure:{" "}
+              <IoIosCloud style={{ color: "#FAA300" }} /> Pressure:{" "}
               {info.main.pressure} hPa
             </p>
             <p>
-              <IoIosCloud style={{ color: "#F5DD61" }} /> Humidity:{" "}
+              <IoIosCloud style={{ color: "#FAA300" }} /> Humidity:{" "}
               {info.main.humidity}%
             </p>
           </div>

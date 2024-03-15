@@ -64,7 +64,6 @@ function App() {
             name="cityInput"
             placeholder="Enter City"
             onChange={(e) => setCity(e.target.value)}
-            style={{ padding: "5px", marginRight: "10px" }}
           ></input>
           <button type="submit" id="submit-btn">
             <FaSearch />

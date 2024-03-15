@@ -7,13 +7,17 @@ body {
   background: #b9e8c6;
 }
 
+p {
+  padding-bottom: 2%;
+}
+
 .searchBox {
   background: #59d5e0;
   border: 1px solid #113946;
   border-radius: 50px;
   display: flex;
   padding: 0.5% 1.5% 0.5% 0.5%;
-  width: 250px;
+  width: auto;
 }
 
 #cityInput {
@@ -29,9 +33,10 @@ body {
 }
 
 #submit-btn {
+  padding-right: 10px;
   background: transparent;
   color: #113946;
   border: none;
-  font-size: large;
+  font-size: x-large;
   cursor: pointer;
 }
